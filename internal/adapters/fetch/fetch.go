@@ -1,7 +1,7 @@
 package fetch
 
 import (
-	p "GopherScan/internal/provider"
+	p "GopherScan/internal/adapters/provider"
 	"context"
 	"io"
 	"net/http"

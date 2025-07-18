@@ -1,6 +1,7 @@
 package provider
 
 import (
+	"GopherScan/internal/platform/utils"
 	"github.com/tidwall/gjson"
 	"strings"
 )
@@ -27,7 +28,7 @@ func (p Provider) Parse(body []byte) ([]string, error) {
 	for i, r := range out {
 		out[i] = strings.TrimPrefix(r, "*.")
 	}
-	return unique(out), nil
+	return utils.Unique(out), nil
 }
 
 func csvParse(b []byte) ([]string, error) {
@@ -38,5 +39,5 @@ func csvParse(b []byte) ([]string, error) {
 			out = append(out, l[:idx])
 		}
 	}
-	return unique(out), nil
+	return utils.Unique(out), nil
 }

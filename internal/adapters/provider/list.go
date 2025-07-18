@@ -1,6 +1,9 @@
 package provider
 
-import "fmt"
+import (
+	"GopherScan/internal/platform/utils"
+	"fmt"
+)
 
 type Provider struct {
 	Name    string
@@ -29,8 +32,7 @@ var outdatedProviders = []Provider{
 }
 
 func Build(domain string, outdated bool) []Provider {
-
-	domain, _ = hostFromURL(domain)
+	domain, _ = utils.HostFromURL(domain)
 	out := make([]Provider, len(builtinProviders))
 	for i, p := range builtinProviders {
 		out[i] = Provider{

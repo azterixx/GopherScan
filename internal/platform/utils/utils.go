@@ -1,4 +1,4 @@
-package provider
+package utils
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func unique(in []string) []string {
+func Unique(in []string) []string {
 	seen := make(map[string]struct{}, len(in))
 	for _, v := range in {
 		if v != "" {
@@ -22,7 +22,7 @@ func unique(in []string) []string {
 
 }
 
-func hostFromURL(raw string) (string, error) {
+func HostFromURL(raw string) (string, error) {
 
 	raw = strings.TrimSpace(raw)
 	raw = strings.TrimSuffix(raw, "/")
