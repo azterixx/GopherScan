@@ -1,7 +1,7 @@
-# GopherScan — Fast CLI-scanner subdomains
+# GopherScan 
 
 
-<img src="docs/logo.png" alt="Logo" width="320"/>
+<img src="docs/preview.png" alt="Logo" width="600"/>
 
 
 
