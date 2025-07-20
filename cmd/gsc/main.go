@@ -1,9 +1,9 @@
 package main
 
 import (
-	"GopherScan/internal/adapters/cli"
-	"GopherScan/internal/app/subdomain"
 	"fmt"
+	"github.com/azterixx/GopherScan/internal/adapters/cli"
+	"github.com/azterixx/GopherScan/internal/app/subdomain"
 	"os"
 )
 

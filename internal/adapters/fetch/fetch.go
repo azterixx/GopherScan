@@ -1,8 +1,8 @@
 package fetch
 
 import (
-	p "GopherScan/internal/adapters/provider"
 	"context"
+	p "github.com/azterixx/GopherScan/internal/adapters/provider"
 	"io"
 	"net/http"
 	"sync"

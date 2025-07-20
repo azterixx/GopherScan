@@ -1,9 +1,9 @@
 package subdomain
 
 import (
-	"GopherScan/internal/adapters/fetch"
-	"GopherScan/internal/adapters/pinger"
-	"GopherScan/internal/adapters/provider"
+	"github.com/azterixx/GopherScan/internal/adapters/fetch"
+	"github.com/azterixx/GopherScan/internal/adapters/pinger"
+	"github.com/azterixx/GopherScan/internal/adapters/provider"
 )
 
 func Scan(domain string, history bool) []string {

@@ -1,8 +1,8 @@
 package provider
 
 import (
-	"GopherScan/internal/platform/utils"
 	"fmt"
+	"github.com/azterixx/GopherScan/internal/platform/utils"
 )
 
 type Provider struct {

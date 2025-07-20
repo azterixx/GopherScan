@@ -1,7 +1,7 @@
 package provider
 
 import (
-	"GopherScan/internal/platform/utils"
+	"github.com/azterixx/GopherScan/internal/platform/utils"
 	"github.com/tidwall/gjson"
 	"strings"
 )
